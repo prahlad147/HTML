@@ -926,105 +926,2181 @@ Example:
 
 
 
+HTML <abbr> for Abbreviations:
 
+-> The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+-> Marking abbreviations can give useful information to browsers, translation systems and search-engines.
 
 
+Tip: 
+-> Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.
 
+Example:
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 
 
 
 
 
+HTML <address> for Contact Information:
 
+-> The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+-> The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
 
+-> The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
 
+Example:
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
 
 
 
 
+HTML <cite> for Work Title:
 
+-> The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
 
+Notes: 
+-> A person's name is not the title of a work.
+-> The text in the <cite> element usually renders in italic.
 
 
+Example:
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
 
 
 
 
 
+HTML <bdo> for Bi-Directional Override:
 
+-> BDO stands for Bi-Directional Override.
+-> The HTML <bdo> tag is used to override the current text direction:
 
 
+Example
 
+<bdo dir="rtl">This text will be written from right to left</bdo>
 
 
 
+HTML Quotation and Citation Elements:
 
+Tag            Description
+<abbr>         Defines an abbreviation or acronym
+<address>      Defines contact information for the author/owner of a document
+<bdo>          Defines the text direction
+<blockquote>   Defines a section that is quoted from another source
+<cite>         Defines the title of a work
+<q>            Defines a short inline quotation
 
 
 
 
+HTML Comments:
 
+-> HTML comments are not displayed in the browser, but they can help document your HTML source code.
 
 
+HTML Comment Tags:
 
+-> You can add comments to your HTML source by using the following syntax:
+<!-- Write your comments here -->
 
 
 
+Notice that there is an exclamation point (!) in the start tag, but not in the end tag.
 
+Notes: 
+-> Comments are not displayed by the browser, but they can help document your HTML source code.
+-> With comments you can place notifications and reminders in your HTML code.
 
+Example:
+<!-- This is a comment -->
+<p>This is a paragraph.</p>
+<!-- Remember to add more information here -->
 
 
 
+Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors:
 
+Example:
+<!-- Do not display this image at the moment
+<img border="0" src="pic_trulli.jpg" alt="Trulli">
+-->
 
 
 
 
+HTML Colors:
 
+-> HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
 
 
+Color Names:
+-> In HTML, a color can be specified by using a color name:
+-> HTML supports 140 standard color names.
 
 
 
 
+Background Color:
+-> You can set the background color for HTML elements:
 
 
 
+Example:
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
 
 
 
 
 
+Text Color:
 
+-> You can set the color of text
 
 
+Hello World
 
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+tincidunt ut laoreet dolore magna aliquam erat volutpat.
 
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
+aliquip ex ea commodo consequat.
 
 
+Example:
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
 
 
 
 
+Border Color:
+-> You can set the color of borders:
+Hello World
+Hello World
+Hello World
 
 
+Example:
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
 
 
 
 
 
+Color Values:
 
+-> In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.
 
+-> The following three <div> elements have their background color set with RGB, HEX, and HSL values:
+rgb(255, 99, 71)
+#ff6347
 
+hsl(9, 100%, 64%)
 
+-> The following two <div> elements have their background color set with RGBA and HSLA values, 
+        which adds an Alpha channel to the color (here we have 50% transparency).
+        
+        
+        
+Example:
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+        
 
 
 
 
+HTML RGB and RGBA Colors:
 
+-> An RGB color value represents RED, GREEN, and BLUE light sources.
+-> An RGBA color value is an extension of RGB with an Alpha channel (opacity).
 
 
 
+RGB Color Values:
+
+-> In HTML, a color can be specified as an RGB value, using this formula:
+rgb(red, green, blue)
+
+-> Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+
+
+-> This means that there are 256 x 256 x 256 = 16777216 possible colors!
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other two (green and blue) are set to 0.
+
+-> Another example, rgb(0, 255, 0) is displayed as green, because green is set to its highest value (255), and the other two (red and blue) are set to 0.
+
+-> To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+-> To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+
+
+
+Experiment by mixing the RGB values below:
+rgb(255, 99, 71)
+RED
+255
+GREEN
+99
+BLUE
+71
+
+Example:
+rgb(255, 0, 0)
+rgb(0, 0, 255)
+rgb(60, 179, 113)
+rgb(238, 130, 238)
+rgb(255, 165, 0)
+rgb(106, 90, 205)
+
+
+
+Shades of Gray:
+
+-> Shades of gray are often defined using equal values for all three parameters:
+
+Example:
+rgb(60, 60, 60)
+rgb(100, 100, 100)
+rgb(140, 140, 140)
+rgb(180, 180, 180)
+rgb(200, 200, 200)
+rgb(240, 240, 240)
+
+
+
+
+RGBA Color Values:
+
+-> RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.
+
+An RGBA color value is specified with:
+rgba(red, green, blue, alpha)
+
+-> The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+
+
+Experiment by mixing the RGBA values below:
+
+rgba(255, 99, 71, 0.5)
+RED
+255
+GREEN
+99
+BLUE
+71
+ALPHA
+0.5
+
+
+Example:
+rgba(255, 99, 71, 0)
+rgba(255, 99, 71, 0.2)
+rgba(255, 99, 71, 0.4)
+rgba(255, 99, 71, 0.6)
+rgba(255, 99, 71, 0.8)
+rgba(255, 99, 71, 1)
+
+
+
+HTML HEX Colors:
+
+-> A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+
+
+HEX Color Values:
+
+-> In HTML, a color can be specified using a hexadecimal value in the form:
+#rrggbb
+Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+
+
+-> For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other two (green and blue) are set to 00.
+-> Another example, #00ff00 is displayed as green, because green is set to its highest value (ff), and the other two (red and blue) are set to 00.
+
+-> To display black, set all color parameters to 00, like this: #000000.
+-> To display white, set all color parameters to ff, like this: #ffffff. 
+
+
+Experiment by mixing the HEX values below:
+#ff6347
+RED
+ff
+GREEN
+63
+BLUE
+47
+
+Example:
+#ff0000
+#0000ff
+#3cb371
+#ee82ee
+#ffa500
+#6a5acd
+
+
+
+
+
+Shades of Gray:
+
+-> Shades of gray are often defined using equal values for all three parameters:
+
+
+Example:
+#404040
+#686868
+#a0a0a0
+#bebebe
+#dcdcdc
+#f8f8f8
+
+-> HTML HSL and HSLA Colors
+-> HSL stands for hue, saturation, and lightness.
+
+-> HSLA color values are an extension of HSL with an Alpha channel (opacity).
+
+
+
+
+HSL Color Values:
+
+-> In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form: hsl(hue, saturation, lightness)
+-> Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+
+
+-> Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+-> Lightness is also a percentage value, 0% is black, and 100% is white.
+
+
+Experiment by mixing the HSL values below:
+
+hsl(0, 100%, 50%)
+HUE
+0
+SATURATION
+100%
+LIGHTNESS
+50%
+
+
+Example:
+hsl(0, 100%, 50%)
+hsl(240, 100%, 50%)
+hsl(147, 50%, 47%)
+hsl(300, 76%, 72%)
+hsl(39, 100%, 50%)
+hsl(248, 53%, 58%)
+
+
+
+
+
+
+Saturation:
+
+-> Saturation can be described as the intensity of a color.
+-> 100% is pure color, no shades of gray
+-> 50% is 50% gray, but you can still see the color.
+-> 0% is completely gray, you can no longer see the color.
+
+
+Example:
+hsl(0, 100%, 50%)
+hsl(0, 80%, 50%)
+hsl(0, 60%, 50%)
+hsl(0, 40%, 50%)
+hsl(0, 20%, 50%)
+hsl(0, 0%, 50%)
+
+
+
+
+Lightness:
+
+-> The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 
+      50% means 50% light (neither dark nor light) 100% means full lightness (white).
+
+
+Example:
+hsl(0, 100%, 0%)
+hsl(0, 100%, 25%)
+hsl(0, 100%, 50%)
+hsl(0, 100%, 75%)
+hsl(0, 100%, 90%)
+hsl(0, 100%, 100%)
+
+
+
+
+Shades of Gray:
+
+-> Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from 0% to 100% to get darker/lighter shades.
+
+
+Example:
+hsl(0, 0%, 20%)
+hsl(0, 0%, 30%)
+hsl(0, 0%, 40%)
+hsl(0, 0%, 60%)
+hsl(0, 0%, 70%)
+hsl(0, 0%, 90%)
+
+
+
+
+
+HSLA Color Values:
+
+-> HSLA color values are an extension of HSL color values with an Alpha channel - which specifies the opacity for a color.
+
+-> An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha).
+
+-> The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+
+
+Experiment by mixing the HSLA values below:
+
+hsla(0, 100%, 50%, 0.5)
+HUE
+0
+SATURATION
+100%
+LIGHTNESS
+50%
+ALPHA
+0.5
+
+
+Example:
+hsla(9, 100%, 64%, 0)
+hsla(9, 100%, 64%, 0.2)
+hsla(9, 100%, 64%, 0.4)
+hsla(9, 100%, 64%, 0.6)
+hsla(9, 100%, 64%, 0.8)
+hsla(9, 100%, 64%, 1)
+
+
+
+
+HTML Styles - CSS:
+
+-> CSS stands for Cascading Style Sheets.
+-> CSS saves a lot of work. 
+-> It can control the layout of multiple web pages all at once.
+-> CSS = Styles and Colors
+
+
+
+
+What is CSS?
+-> Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+-> With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, 
+    what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
+    
+    
+Tip: 
+-> The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. 
+-> So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color 
+    (unless you specify something else)!
+
+
+
+
+Using CSS:
+
+CSS can be added to HTML documents in 3 ways:
+• Inline - by using the style attribute inside HTML elements
+• Internal - by using a <style> element in the <head> section
+• External - by using a <link> element to link to an external CSS file
+
+-> The most common way to add CSS, is to keep the styles in external CSS files. 
+
+
+
+Inline CSS:
+
+-> An inline CSS is used to apply a unique style to a single HTML element.
+-> An inline CSS uses the style attribute of an HTML element.
+
+
+-> The following example sets the text color of the <h1> element to blue, and the text color of the <p> element to red:
+
+Example:
+<h1 style="color:blue;">A Blue Heading</h1>
+<p style="color:red;">A red paragraph.</p>
+
+
+
+
+Internal CSS:
+
+-> An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+-> The following example sets the text color of ALL the <h1> elements (on that page) to blue, and the text color of ALL the <p> elements to red. 
+
+-> In addition, the page will be displayed with a "powderblue" background color:
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1 {color: blue;}
+p {color: red;}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+
+
+
+
+External CSS:
+
+-> An external style sheet is used to define the style for many HTML pages.
+-> To use an external style sheet, add a link to it in the <head> section of each HTML page:
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+
+-> The external style sheet can be written in any text editor. 
+-> The file must not contain any HTML code, and must be saved with a .css extension.
+
+
+Here is what the "styles.css" file looks like:
+"styles.css":
+body {
+ background-color: powderblue;
+}
+h1 {
+color: blue;
+}
+p {
+ color: red;
+}
+
+
+Tip:
+-> With an external style sheet, you can change the look of an entire web site, by changing one file!
+
+
+
+
+CSS Colors, Fonts and Sizes:
+
+-> The CSS color property defines the text color to be used.
+-> The CSS font-family property defines the font to be used.
+-> The CSS font-size property defines the text size to be used.
+
+
+Example:
+
+Use of CSS color, font-family and font-size properties:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+ color: blue;
+ font-family: verdana;
+ font-size: 300%;
+}
+p {
+color: red;
+font-family: courier;
+font-size: 160%;
+}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+
+
+
+
+CSS Border:
+
+-> The CSS border property defines a border around an HTML element.
+
+Tip: 
+-> You can define a border for nearly all HTML elements.
+
+
+Example:
+Use of CSS border property:
+p {
+ border: 2px solid powderblue;
+}
+
+
+
+
+
+
+CSS Padding:
+
+-> The CSS padding property defines a padding (space) between the text and the border.
+
+
+Example:
+
+Use of CSS border and padding properties:
+p {
+border: 2px solid powderblue;
+padding: 30px;
+}
+
+
+
+CSS Margin:
+
+The CSS margin property defines a margin (space) outside the border.
+
+Example:
+
+Use of CSS border and margin properties:
+p {
+border: 2px solid powderblue;
+ margin: 50px;
+}
+
+
+
+
+Link to External CSS:
+-> External style sheets can be referenced with a full URL or with a path relative to the current web page.
+
+Example:
+
+This example uses a full URL to link to a style sheet:
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+
+
+Example:
+
+This example links to a style sheet located in the html folder on the current web site:
+<link rel="stylesheet" href="/html/styles.css">
+
+
+Example:
+
+This example links to a style sheet located in the same folder as the current page:
+<link rel="stylesheet" href="styles.css">
+
+
+
+
+
+Notes:
+• Use the HTML style attribute for inline styling
+• Use the HTML <style> element to define internal CSS
+• Use the HTML <link> element to refer to an external CSS file
+• Use the HTML <head> element to store <style> and <link> elements
+• Use the CSS color property for text colors
+• Use the CSS font-family property for text fonts
+• Use the CSS font-size property for text sizes
+• Use the CSS border property for borders
+• Use the CSS padding property for space inside the border
+• Use the CSS margin property for space outside the border
+
+
+
+
+HTML Links:
+
+-> Links are found in nearly all web pages. Links allow users to click their way from page to page.
+
+
+HTML Links - Hyperlinks:
+
+-> HTML links are hyperlinks.
+-> You can click on a link and jump to another document.
+-> When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+Notes: 
+-> A link does not have to be text. A link can be an image or any other HTML element.
+
+
+
+
+HTML Links - Syntax:
+
+-> The HTML <a> tag defines a hyperlink. 
+
+-> It has the following syntax:
+<a href="url">link text</a>
+
+
+-> The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+
+-> The link text is the part that will be visible to the reader.
+-> Clicking on the link text, will send the reader to the specified URL address.
+
+
+Example:
+This example shows how to create a link to W3Schools.com:
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+By default, links will appear as follows in all browsers:
+• An unvisited link is underlined and blue
+• A visited link is underlined and purple
+• An active link is underlined and red
+
+
+Tip: Links can of course be styled with CSS, to get another look!
+
+
+
+
+
+HTML Links - The target Attribute:
+
+-> By default, the linked page will be displayed in the current browser window. 
+-> To change this, you must specify another target for the link.
+
+-> The target attribute specifies where to open the linked document.
+-> The target attribute can have one of the following values:
+
+• _self - Default. Opens the document in the same window/tab as it was clicked
+• _blank - Opens the document in a new window or tab
+• _parent - Opens the document in the parent frame
+• _top - Opens the document in the full body of the window
+
+
+Example:
+Use target="_blank" to open the linked document in a new browser window or tab:
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+
+
+
+Absolute URLs vs. Relative URLs:
+
+-> Both examples above are using an absolute URL (a full web address) in the href attribute.
+-> A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part).
+
+
+Example:
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+
+
+
+HTML Links - Use an Image as a Link:
+
+-> To use an image as a link, just put the <img> tag inside the <a> tag:
+
+Example:
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
+Link to an Email Address:
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email).
+
+
+Example:
+<a href="mailto:someone@example.com">Send email</a>
+
+
+
+
+
+Button as a Link:
+
+-> To use an HTML button as a link, you have to add some JavaScript code.
+-> JavaScript allows you to specify what happens at certain events, such as a click of a button:
+
+
+Example:
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+
+Link Titles:
+
+-> The title attribute specifies extra information about an element. 
+-> The information is most often shown as a tooltip text when the mouse moves over the element.
+
+Example:
+
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+
+More on Absolute URLs and Relative URLs
+
+Example:
+Use a full URL to link to a web page:
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+
+Example:
+Link to a page located in the html folder on the current web site:
+<a href="/html/default.asp">HTML tutorial</a>
+
+Example:
+Link to a page located in the same folder as the current page:
+<a href="default.asp">HTML tutorial</a>
+
+
+Notes:
+• Use the <a> element to define a link
+• Use the href attribute to define the link address
+• Use the target attribute to define where to open the linked document
+• Use the <img> element (inside <a>) to use an image as a link
+• Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+
+
+
+
+HTML Links - Different Colors:
+
+-> An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.
+
+
+HTML Link Colors:
+
+By default, a link will appear like this (in all browsers):
+• An unvisited link is underlined and blue
+• A visited link is underlined and purple
+• An active link is underlined and red
+
+
+You can change the link state colors, by using CSS:
+
+Example:
+-> Here, an unvisited link will be green with no underline. 
+-> A visited link will be pink with no underline. 
+-> An active link will be yellow and underlined. 
+
+-> In addition, when mousing over a link (a:hover) it will become red and underlined:
+
+
+<style>
+a:link {
+ color: green;
+ background-color: transparent;
+ text-decoration: none;
+}
+
+a:visited {
+color: pink;
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: red;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: yellow;
+background-color: transparent;
+text-decoration: underline;
+}
+</style> 
+
+
+
+
+Link Buttons:
+
+-> A link can also be styled as a button, by using CSS:
+
+This is a link
+
+
+Example
+<style>
+a:link, a:visited {
+background-color: #f44336;
+color: white;
+padding: 15px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+
+a:hover, a:active {
+background-color: red;
+}
+</style>
+
+
+
+
+
+HTML Links - Create Bookmarks:
+
+-> HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+
+
+Create a Bookmark in HTML:
+-> Bookmarks can be useful if a web page is very long.
+-> To create a bookmark - first create the bookmark, then add a link to it.
+
+-> When the link is clicked, the page will scroll down or up to the location with the bookmark.
+
+
+Example:
+First, use the id attribute to create a bookmark:
+<h2 id="C4">Chapter 4</h2>
+Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+
+
+Example:
+<a href="#C4">Jump to Chapter 4</a>
+You can also add a link to a bookmark on another page:
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+
+
+Notes:
+• Use the id attribute (id="value") to define bookmarks in a page
+• Use the href attribute (href="#value") to link to the bookmark
+
+
+
+
+
+HTML Images:
+
+-> Images can improve the design and the appearance of a web page.
+
+
+Example:
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+
+Example:
+<img src="img_girl.jpg" alt="Girl in a jacket">
+
+Example:
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+
+
+
+HTML Images Syntax:
+
+-> The HTML <img> tag is used to embed an image in a web page.
+-> Images are not technically inserted into a web page; images are linked to web pages. 
+
+-> The <img>tag creates a holding space for the referenced image.
+
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+The <img> tag has two required attributes:
+• src - Specifies the path to the image
+• alt - Specifies an alternate text for the image
+
+Syntax:
+<img src="url" alt="alternatetext">
+
+
+
+
+The src Attribute:
+
+-> The required src attribute specifies the path (URL) to the image.
+
+Notes: 
+-> When a web page loads; it is the browser, at that moment, that gets the image from a web server and inserts it into the page. 
+-> Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. 
+-> The broken link icon and the alt text are shown if the browser cannot find the image.
+
+
+Example:
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+
+
+
+
+The alt Attribute:
+
+-> The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it 
+    (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+    
+    
+-> The value of the alt attribute should describe the image:
+
+
+Example:
+
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+-> If a browser cannot find an image, it will display the value of the alt attribute:
+
+
+Example:
+
+<img src="wrongname.gif" alt="Flowers in Chania">
+
+
+Tip: 
+-> A screen reader is a software program that reads the HTML code, and allows the user to "listen" to the content. 
+-> Screen readers are useful for people who are visually impaired or learning disabled.
+
+
+
+
+Image Size - Width and Height:
+
+-> You can use the style attribute to specify the width and height of an image.
+
+
+Example:
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+
+-> Alternatively, you can use the width and height attributes:
+
+
+Example:
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+
+-> The width and height attributes always define the width and height of the image in pixels.
+
+Notes: 
+-> Always specify the width and height of an image. 
+-> If width and height are not specified, the web page might flicker while the image loads.
+
+
+
+
+
+Width and Height, or Style?
+
+-> The width, height, and style attributes are all valid in HTML.
+-> However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:
+
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+ width: 100%;
+}
+</style>
+</head>
+<body>
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+</body>
+</html>
+
+
+
+
+
+
+Images in Another Folder:
+
+-> If you have your images in a sub-folder, you must include the folder name in the src attribute:
+
+
+Example:
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+
+Images on Another Server/Website:
+
+-> Some web sites point to an image on another server.
+-> To point to an image on another server, you must specify an absolute (full) URL in the src attribute:
+
+
+Example:
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+
+
+Notes on external images: 
+-> External images might be under copyright. 
+-> If you do not get permission to use it, you may be in violation of copyright laws. 
+-> In addition, you cannot control external images; it can suddenly be removed or changed.
+
+
+
+
+Animated Images:
+
+-> HTML allows animated GIFs:
+
+Example:
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+
+Image as a Link:
+
+-> To use an image as a link, put the <img> tag inside the <a> tag:
+
+Example:
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
+Image Floating:
+
+-> Use the CSS float property to let the image float to the right or to the left of a text:
+
+
+Example:
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+
+
+
+
+Common Image Formats:
+
+-> Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):
+
+
+Abbreviation       File Format                              File Extension
+APNG               Animated Portable Network Graphics       .apng
+GIF                Graphics Interchange Format              .gif
+ICO                Microsoft Icon                           .ico, .cur 
+JPEG               Joint Photographic Expert Group image    .jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG                Portable Network Graphics                .png
+SVG                Scalable Vector Graphics                 .svg
+
+
+
+
+
+Notes:
+• Use the HTML <img> element to define an image
+• Use the HTML src attribute to define the URL of the image
+• Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+• Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+• Use the CSS float property to let the image float to the left or to the right
+
+
+Notes: 
+-> Loading large images takes time, and can slow down your web page. 
+-> Use images carefully.
+
+
+
+HTML Image Tags:
+
+Tag        Description
+<img>      Defines an image
+<map>      Defines an image map
+<area>     Defines a clickable area inside an image map
+<picture>  Defines a container for multiple image resources
+
+
+
+
+HTML Image Maps:
+
+-> With HTML image maps, you can create clickable areas on an image.
+
+
+Image Maps:
+
+-> The HTML <map> tag defines an image map. An image map is an image with clickable areas. 
+-> The areas are defined with one or more <area> tags. 
+
+
+
+Here is the HTML source code for the image map above:
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+<map name="workmap">
+<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+<area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+
+
+
+How Does it Work?
+-> The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
+-> To create an image map you need an image, and some HTML code that describes the clickable areas.
+
+
+
+
+The Image:
+
+-> The image is inserted using the <img> tag. The only difference from other images is that you must add a usemap attribute:
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+-> The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.
+
+Tip: You can use any image as an image map!
+
+
+
+
+Create Image Map:
+
+-> Then, add a <map> element.
+-> The <map> element is used to create an image map, and is linked to the image by using the required name attribute.
+
+
+<map name="workmap">
+The name attribute must have the same value as the <img>'s use map attribute .
+
+
+
+
+The Areas:
+
+-> Then, add the clickable areas.
+-> A clickable area is defined using an <area> element.
+
+
+Shape
+You must define the shape of the clickable area, and you can choose one of these values:
+• rect - defines a rectangular region
+• circle - defines a circular region
+• poly - defines a polygonal region
+• default - defines the entire region
+
+-> You must also define some coordinates to be able to place the clickable area onto the image.
+
+
+
+
+Shape="rect":
+
+-> The coordinates for shape="rect" come in pairs, one for the x-axis and one for the y-axis.
+-> So, the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels from the top:
+-> The coordinates 270,350 is located 270 pixels from the left margin and 350 pixels from the top:
+-> Now we have enough data to create a clickable rectangular area:
+
+
+Example
+<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+-> This is the area that becomes clickable and will send the user to the page "computer.htm":
+
+
+
+Shape="circle"
+
+-> To add a circle area, first locate the coordinates of the center of the circle:
+337,300
+
+-> Then specify the radius of the circle:
+44 pixels
+
+-> Now you have enough data to create a clickable circular area:
+
+
+Example
+<area shape="circle" coords="337, 300, 44" href="coffee.htm">
+
+-> This is the area that becomes clickable and will send the user to the page "coffee.htm":
+
+
+
+
+
+
+Shape="poly":
+
+-> The shape="poly" contains several coordinate points, which creates a shape formed with straight lines (a polygon).
+-> This can be used to create any shape.
+
+-> Like maybe a croissant shape!
+
+How can we make the croissant in the image below become a clickable link?
+
+-> We have to find the x and y coordinates for all edges of the croissant:
+-> The coordinates come in pairs, one for the x-axis and one for the y-axis:
+
+
+Example:
+<area shape="poly"
+coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,
+147" href="croissant.htm">
+This is the area that becomes clickable and will send the user to the page "croissant.htm":
+
+
+
+
+Image Map and JavaScript:
+
+-> A clickable area can also trigger a JavaScript function.
+-> Add a click event to the <area> element to execute a JavaScript function:
+
+Example:
+
+Here, we use the onclick attribute to execute a JavaScript function when the area is clicked:
+<map name="workmap">
+<area shape="circle" coords="337,300,44" onclick="myFunction()">
+</map>
+<script>
+function myFunction() {
+alert("You clicked the coffee cup!");
+}
+</script>
+
+
+
+Notes:
+• Use the HTML <map> element to define an image map
+• Use the HTML <area> element to define the clickable areas in the image map
+• Use the HTML usemap attribute of the <img> element to point to an image map
+
+
+
+
+
+HTML Background Images:
+
+-> A background image can be specified for almost any HTML element.
+
+
+Background Image on a HTML element:
+
+-> To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property.
+
+
+Example:
+
+Add a background image on a HTML element:
+<div style="background-image: url('img_girl.jpg');">
+You can also specify the background image in the <style> element, in the <head> section:
+
+
+Example:
+Specify the background image in the <style> element:
+<style>
+div {
+background-image: url('img_girl.jpg');
+}
+</style>
+
+
+
+
+Background Image on a Page:
+
+-> If you want the entire page to have a background image, you must specify the background image on the <body> element.
+
+
+Example:
+Add a background image for the entire page:
+<style>
+body {
+background-image: url('img_girl.jpg');
+}
+</style>
+
+
+
+
+
+Background Repeat:
+
+-> If the background image is smaller than the element, the image will repeat itself, horizontally and vertically, until it reaches the end of the element.
+
+Example:
+<style>
+body {
+background-image: url('example_img_girl.jpg');
+}
+</style>
+
+
+-> To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
+
+Example:
+<style>
+body {
+background-image: url('example_img_girl.jpg');
+background-repeat: no-repeat;
+}
+</style>
+
+
+
+
+Background Cover:
+
+-> If you want the background image to cover the entire element, you can set the background-size property to cover.
+-> Also, to make sure the entire element is always covered, set the background-attachment property to fixed.
+
+-> This way, the background image will cover the entire element, with no stretching (the image will keep its original proportions).
+
+
+Example:
+<style>
+body {
+background-image: url('img_girl.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+</style>
+
+
+
+
+Background Stretch:
+
+-> If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%: 
+-> Try resizing the browser window, and you will see that the image will stretch, but always cover the entire element.
+
+
+Example:
+<style>
+body {
+background-image: url('img_girl.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+</style>
+
+
+
+
+
+HTML <picture> Element:
+
+-> The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
+
+-> The HTML <picture> element gives web developers more flexibility in specifying image resources.
+
+
+-> The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. 
+-> This way the browser can choose the image that best fits the current view and/or device.
+-> Each <source> element has a media attribute that defines when the image is the most suitable.
+
+
+Example:
+Show different images for different screen sizes:
+<picture>
+<source media="(min-width: 650px)" srcset="img_food.jpg">
+<source media="(min-width: 465px)" srcset="img_car.jpg">
+<img src="img_girl.jpg">
+</picture>
+
+
+Notes: 
+-> Always specify an <img> element as the last child element of the <picture> element. 
+-> The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match.
+
+
+
+
+When to use the Picture Element:
+
+There are two main purposes for the <picture> element:
+
+1. Bandwidth
+-> If you have a small screen or device, it is not necessary to load a large image file. 
+-> The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+
+2. Format Support
+-> Some browsers or devices may not support all image formats. 
+-> By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements. 
+
+
+Example:
+The browser will use the first image format it recognizes.
+<picture>
+<source srcset="img_avatar.png">
+<source srcset="img_girl.jpg">
+<img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+Notes: 
+-> The browser will use the first <source> element with matching attribute values, and ignore any following <source> elements.
+
+
+
+
+HTML Tables:
+
+-> HTML tables allow web developers to arrange data into rows and columns.
+
+
+Example:
+
+Company                           Contact            Country
+Alfreds Futterkiste               Maria Anders       Germany
+Centro comercial Moctezuma        Francisco Chang    Mexico
+Ernst Handel                      Roland Mendel      Austria
+Island Trading                    Helen Bennett      UK
+Laughing Bacchus Winecellars      Yoshi Tannamuri    Canada
+Magazzini Alimentari Riuniti      Giovanni Rovelli   Italy
+
+
+
+
+
+
+Define an HTML Table:
+
+-> The <table> tag defines an HTML table.
+-> Each table row is defined with a <tr> tag. Each table header is defined with a <th> tag. 
+-> Each table data/cell is defined with a <td> tag.
+
+
+-> By default, the text in <th> elements are bold and centered. 
+-> By default, the text in <td> elements are regular and left-aligned.
+
+
+Example:
+A simple HTML table:
+<table style="width:100%">
+<tr>
+ <th>Firstname</th>
+ <th>Lastname</th>
+ <th>Age</th>
+</tr>
+<tr>
+<td>Jill</td>
+ <td>Smith</td>
+ <td>50</td>
+</tr>
+<tr>
+ <td>Eve</td>
+ <td>Jackson</td>
+ <td>94</td>
+</tr>
+</table>
+
+
+Notes: 
+-> The <td> elements are the data containers of the table.
+-> They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+
+
+
+
+HTML Table - Add a Border:
+
+-> To add a border to a table, use the CSS border property:
+
+Example:
+table, th, td {
+ border: 1px solid black;
+}
+
+-> Remember to define borders for both the table and the table cells.
+
+
+
+
+HTML Table - Collapsed Borders:
+
+-> To let the borders collapse into one border, add the CSS border-collapse property:
+
+
+Example:
+table, th, td {
+ border: 1px solid black;
+border-collapse: collapse;
+}
+
+
+
+HTML Table - Add Cell Padding:
+
+-> Cell padding specifies the space between the cell content and its borders.
+-> If you do not specify a padding, the table cells will be displayed without padding.
+
+
+To set the padding, use the CSS padding property:
+
+Example:
+th, td {
+padding: 15px;
+}
+
+
+
+
+HTML Table - Left-align Headings:
+
+-> By default, table headings are bold and centered.
+-> To left-align the table headings, use the CSS text-align property:
+
+Example:
+th {
+ text-align: left;
+}
+
+
+HTML Table - Add Border Spacing:
+
+-> Border spacing specifies the space between the cells.
+-> To set the border spacing for a table, use the CSS border-spacing property:
+
+
+Example:
+table {
+border-spacing: 5px;
+}
+
+
+Notes: 
+-> If the table has collapsed borders, border-spacing has no effect.
+
+
+
+
+HTML Table - Cell that Spans Many Columns:
+
+-> To make a cell span more than one column, use the colspan attribute:
+
+
+Example:
+<table style="width:100%">
+<tr>
+ <th>Name</th>
+ <th colspan="2">Telephone</th>
+</tr>
+<tr>
+ <td>Bill Gates</td>
+ <td>55577854</td>
+ <td>55577855</td>
+</tr>
+</table>
+
+
+
+
+
+HTML Table - Cell that Spans Many Rows:
+
+-> To make a cell span more than one row, use the rowspan attribute:
+
+
+Example:
+<table style="width:100%">
+<tr>
+ <th>Name:</th>
+ <td>Bill Gates</td>
+</tr>
+<tr>
+ <th rowspan="2">Telephone:</th>
+ <td>55577854</td>
+</tr>
+<tr>
+ <td>55577855</td>
+</tr>
+</table>
+
+
+
+
+
+HTML Table - Add a Caption:
+
+-> To add a caption to a table, use the <caption> tag:
+
+
+Example:
+<table style="width:100%">
+<caption>Monthly savings</caption>
+<tr>
+ <th>Month</th>
+ <th>Savings</th>
+</tr>
+<tr>
+ <td>January</td>
+ <td>$100</td>
+</tr>
+<tr>
+ <td>February</td>
+ <td>$50</td>
+</tr>
+</table>
+
+Notes: 
+-> The <caption> tag must be inserted immediately after the <table> tag.
+
+
+
+
+
+A Special Style for One Table:
+
+-> To define a special style for one particular table, add an id attribute to the table:
+
+
+Example:
+
+<table id="t01">
+<tr>
+ <th>Firstname</th>
+ <th>Lastname</th>
+ <th>Age</th>
+</tr>
+<tr>
+ <td>Eve</td>
+ <td>Jackson</td>
+ <td>94</td>
+</tr>
+</table>
+
+
+-> Now you can define a special style for this table:
+#t01 {
+ width: 100%;
+ background-color: #f1f1c1;
+}
+And add more styles:
+#t01 tr:nth-child(even) {
+ background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+ color: white;
+ background-color: black;
+}
+
+
+
+
+
+Notes :
+• Use the HTML <table> element to define a table
+• Use the HTML <tr> element to define a table row
+• Use the HTML <td> element to define a table data
+• Use the HTML <th> element to define a table heading
+• Use the HTML <caption> element to define a table caption
+• Use the CSS border property to define a border
+• Use the CSS border-collapse property to collapse cell borders
+• Use the CSS padding property to add padding to cells
+• Use the CSS text-align property to align cell text
+• Use the CSS border-spacing property to set the spacing between cells
+• Use the colspan attribute to make a cell span many columns
+• Use the rowspan attribute to make a cell span many rows
+• Use the id attribute to uniquely define one table
+
+
+
+
+HTML Table Tags:
+
+Tag           Description
+<table>       Defines a table
+<th>          Defines a header cell in a table
+<tr>          Defines a row in a table
+<td>          Defines a cell in a table
+<caption>     Defines a table caption
+<colgroup>    Specifies a group of one or more columns in a table for formatting
+<col>         Specifies column properties for each column within a <colgroup> element
+<thead>       Groups the header content in a table
+<tbody>       Groups the body content in a table
+<tfoot>       Groups the footer content in a table
+
+
+
+
+
+HTML Lists:
+
+-> HTML lists allow web developers to group a set of related items in lists.
+
+
+Example:
+
+An unordered HTML list:
+• Item
+• Item
+• Item
+• Item
+
+
+An ordered HTML list:
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
+
+
+
+
+
+Unordered HTML List:
+
+-> An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+-> The list items will be marked with bullets (small black circles) by default.
+
+Example:
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+
+
+Ordered HTML List:
+
+-> An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+-> The list items will be marked with numbers by default.
+
+
+Example:
+<ol>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+
+
+HTML Description Lists:
+
+-> HTML also supports description lists.
+-> A description list is a list of terms, with a description of each term.
+-> The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term.
+
+
+Example:
+<dl>
+<dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+</dl>
+
+
+
+
+HTML List Tags
+Tag     Description
+<ul>    Defines an unordered list
+<ol>    Defines an ordered list
+<li>    Defines a list item
+<dl>    Defines a description list
+<dt>    Defines a term in a description list
+<dd>    Describes the term in a description list
+
+
+
+
+HTML Unordered Lists:
+
+-> The HTML <ul> tag defines an unordered (bulleted) list.
+-> An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+-> The list items will be marked with bullets (small black circles) by default.
+
+
+Example:
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+
+
+
+
+Unordered HTML List - Choose List Item Marker:
+
+-> The CSS list-style-type property is used to define the style of the list item marker. 
+-> It can have one of the following values:
+
+
+Value   Description
+disc    Sets the list item marker to a bullet (default)
+circle  Sets the list item marker to a circle
+square  Sets the list item marker to a square
+none    The list items will not be marked
+
+
+
+Example - Disc
+<ul style="list-style-type:disc;">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+
+
+Example - Circle
+<ul style="list-style-type:circle;">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+
+
+Example - Square
+<ul style="list-style-type:square;">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+
+
+Example - None
+<ul style="list-style-type:none;">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+
+
+
+
+Nested HTML Lists:
+
+-> Lists can be nested (list inside list):
+
+Example:
+<ul>
+<li>Coffee</li>
+<li>Tea
+<ul>
+ <li>Black tea</li>
+ <li>Green tea</li>
+ </ul>
+</li>
+<li>Milk</li>
+</ul>
+
+
+Notes: 
+-> A list item (<li>) can contain a new list, and other HTML elements, like images and links, etc.
+
+
+
+
+Horizontal List with CSS:
+
+-> HTML lists can be styled in many different ways with CSS.
+-> One popular way is to style a list horizontally, to create a navigation menu:
+
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+ overflow: hidden;
+ background-color: #333333;
+}
+
+li {
+ float: left;
+}
+
+li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 16px;
+text-decoration: none;
+}
+
+li a:hover {
+ background-color: #111111;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+</body>
+</html>
+
+
+
+
+
+Notes:
+• Use the HTML <ul> element to define an unordered list
+• Use the CSS list-style-type property to define the list item marker
+• Use the HTML <li> element to define a list item
+• Lists can be nested
+• List items can contain other HTML elements 
+• Use the CSS property float:left to display a list horizontally
+
+
+
+
+
+HTML Ordered Lists:
+
+-> The HTML <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
+-> An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+
+
+The list items will be marked with numbers by default:
+
+Example:
+<ol>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+
+
+Ordered HTML List - The Type Attribute:
+
+-> The type attribute of the <ol> tag, defines the type of the list item marker:
+
+Type        Description
+type="1"    The list items will be numbered with numbers (default)
+type="A"    The list items will be numbered with uppercase letters
+type="a"    The list items will be numbered with lowercase letters
+type="I"    The list items will be numbered with uppercase roman numbers
+type="i"    The list items will be numbered with lowercase roman numbers
+
+
+
+
+
+Numbers:
+<ol type="1">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+
+Uppercase Letters:
+<ol type="A">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+
+Lowercase Letters:
+<ol type="a">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+
+Uppercase Roman Numbers:
+<ol type="I">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+
+Lowercase Roman Numbers:
+<ol type="i">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+
+
+Control List Counting:
+
+-> By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute:
+
+Example:
+<ol start="50">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+
+
+Nested HTML Lists:
+
+Lists can be nested (list inside list):
+
+Example:
+<ol>
+<li>Coffee</li>
+<li>Tea
+<ol>
+ <li>Black tea</li>
+ <li>Green tea</li>
+ </ol>
+</li>
+<li>Milk</li>
+</ol>
+
+
+Notes: 
+-> A list item (<li>) can contain a new list, and other HTML elements, like images and links, etc.
+
+
+
+Notes:
+• Use the HTML <ol> element to define an ordered list
+• Use the HTML type attribute to define the numbering type
+• Use the HTML <li> element to define a list item
+• Lists can be nested
+• List items can contain other HTML elements
 
 
 
